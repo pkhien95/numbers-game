@@ -1,10 +1,22 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {StyleSheet, View} from 'react-native';
+import Svg from "react-native-svg";
+import NumberCircle from "./src/NumberCircle";
 
 export default function App() {
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Svg width={'100%'} height={'100%'}>
+        <NumberCircle
+          cx={200}
+          cy={200}
+          number={1}
+          stroke="purple"
+          strokeWidth="2"
+          fill="red"
+        />
+      </Svg>
     </View>
   );
 }
